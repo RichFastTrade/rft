@@ -1,0 +1,20 @@
+version: v0.1.0
+url: https://m2trade.richfast.trade/
+server:
+  http:
+    addr: 0.0.0.0:8000
+  grpc:
+    addr: 0.0.0.0:9000
+postgresql:
+  host: postgresql.richfast.trade
+  port: 5432
+  user: postgres
+  password: postgres
+  database: postgres
+rabbitmq:
+  host: rabbitmq.richfast.trade
+  port: 5672
+  user: guest
+  password: guest
+pyroscope:
+  addr: http://pyroscope.richfast.trade:4040

@@ -1,0 +1,18 @@
+klinePeriod: 5m
+analyzeAmount: 500
+exchange:
+  binance:
+    apiKey: abcdefg
+    apiSecret: abcdefg
+    futures:
+      url: https://fapi.binance.com
+    copyFutures:
+      url: https://api.binance.com
+feishu:
+  appId: abcdefg
+  appSecret: abcdefg
+  groups:
+    default: abcdefg
+    small: abcdefg
+    medium: abcdefg
+    large: abcdefg
