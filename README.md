@@ -8,7 +8,6 @@ RichFastTrade 是一个基于 Golang 的量化交易系统，旨在提供快速�
 
 RichFastTrade 由以下微服务组成：
 
-- [x] [timer](https://github.com/RichFastTrade/timer) - 任务调度服务，负责定时创建任务并分发到任务队列，供其他微服务执行。
 - [x] [datahub](https://github.com/RichFastTrade/datahub) - 行情数据服务，负责同步K线，提供交易所实时数据和K线数据
 - [x] [analyzer](https://github.com/RichFastTrade/analyzer) - 交易分析服务，负责图表分析、缠论、K线预处理等功能
 - [x] [notifier](https://github.com/RichFastTrade/notifier) - 预警通知服务，负责通知分发，包括邮件、短信、微信等
