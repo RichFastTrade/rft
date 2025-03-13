@@ -17,8 +17,9 @@ RichFastTrade 由以下微服务组成：
 ## Docker 镜像
 [harbor](https://harbor.richfast.trade)
 
-## 已接入的交易所产品
+## 支持的交易所产品
 
+### 加密货币
 - [ ] **币安**
   - [ ] 现货
   - [x] 合约
@@ -35,3 +36,5 @@ RichFastTrade 由以下微服务组成：
   - [ ] 现货
   - [ ] 合约
   - [ ] 跟单合约
+
+### 证券
