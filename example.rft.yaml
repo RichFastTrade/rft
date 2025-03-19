@@ -4,6 +4,8 @@ exchange:
   binance:
     apiKey: abcdefg
     apiSecret: abcdefg
+    spot:
+      url: https://api.binance.com
     futures:
       url: https://fapi.binance.com
     copyFutures:
