@@ -1,0 +1,17 @@
+services:
+  datahub:
+    build: datahub
+    container_name: datahub
+    restart: unless-stopped
+  analyzer:
+    build: analyzer
+    container_name: analyzer
+    restart: unless-stopped
+  notifier:
+    build: notifier
+    container_name: notifier
+    restart: unless-stopped
+  drawer:
+    build: drawer
+    container_name: drawer
+    restart: unless-stopped

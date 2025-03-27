@@ -16,5 +16,3 @@ rabbitmq:
   port: 5672
   user: guest
   password: guest
-pyroscope:
-  addr: http://pyroscope.richfast.trade:4040
