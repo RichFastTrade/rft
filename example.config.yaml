@@ -12,7 +12,7 @@ postgresql:
   password: postgres
   database: postgres
 rabbitmq:
-  host: rabbitmq.richfast.trade
+  host: rabbitmq
   port: 5672
   user: guest
   password: guest

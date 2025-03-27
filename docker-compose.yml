@@ -3,15 +3,34 @@ services:
     build: datahub
     container_name: datahub
     restart: unless-stopped
+    depends_on:
+      - rabbitmq
   analyzer:
     build: analyzer
     container_name: analyzer
     restart: unless-stopped
+    depends_on:
+      - rabbitmq
   notifier:
     build: notifier
     container_name: notifier
     restart: unless-stopped
+    depends_on:
+      - rabbitmq
   drawer:
     build: drawer
     container_name: drawer
     restart: unless-stopped
+    depends_on:
+      - rabbitmq
+  rabbitmq:
+    image: rabbitmq:4-management
+    container_name: rabbitmq
+    restart: unless-stopped
+    ports:
+#      - "5672:5672"
+      - "15672:15672"
+    hostname: rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=a1an
+      - RABBITMQ_DEFAULT_PASS=1314
