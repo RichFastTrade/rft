@@ -3,18 +3,26 @@ services:
     build: datahub
     container_name: datahub
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   analyzer:
     build: analyzer
     container_name: analyzer
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   notifier:
     build: notifier
     container_name: notifier
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   drawer:
     build: drawer
     container_name: drawer
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
   rabbitmq:
     image: rabbitmq:4-management
     container_name: rabbitmq
