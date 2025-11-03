@@ -1,5 +1,6 @@
 klinePeriod: 5m
 analyzeAmount: 500
+quoteVolume24h: 10_000_000
 exchange:
   binance:
     apiKey: abcdefg
