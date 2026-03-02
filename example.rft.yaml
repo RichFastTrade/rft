@@ -11,16 +11,6 @@ exchange:
       url: https://api.binance.com
     spot:
       url: https://api.binance.com
-  okx:
-    futures:
-      url: https://www.okx.com
-    spot:
-      url: https://www.okx.com
-  bitget:
-    futures:
-      url: https://api.bitget.com
-    spot:
-      url: https://api.bitget.com
 feishu:
   appId: abcdefg
   appSecret: abcdefg
